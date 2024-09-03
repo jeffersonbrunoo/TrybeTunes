@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
-import Loading from './Loading';
 import styles from '../css modules/Header.module.css';
 
 class Header extends Component {
   state = {
-    loading: true,
     user: null,
   };
 
   async componentDidMount() {
     const user = await getUser();
-    this.setState({ loading: false, user });
+    this.setState({ user });
   }
 
   renderHeaderContent = () => {
@@ -27,8 +25,11 @@ class Header extends Component {
   };
 
   render() {
-    const { loading } = this.state;
-    if (loading) return <Loading />;
+    const { user } = this.state;
+
+    // Enquanto `user` for null, não renderizamos nada (ou podemos renderizar algo específico)
+    if (!user) return null;
+
     return (
       <header className={ styles.header }>
         <div className={ styles.headerName }>

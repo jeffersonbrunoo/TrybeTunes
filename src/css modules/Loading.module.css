@@ -1,0 +1,8 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #003BE5 0%, #00D5E2 100%);
+    position: relative;
+  }
