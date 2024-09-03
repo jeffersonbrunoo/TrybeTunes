@@ -1,0 +1,81 @@
+.pageLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #003BE5 0%, #00D5E2 100%);
+  position: relative;
+}
+
+/* Caixa branca */
+.loginBox {
+  position: absolute;
+  width: 750px;
+  height: 450px;
+  background: #ffffff;
+  box-shadow: 0px 0px 26px rgba(68, 73, 85, 0.2);
+  border-radius: 20px;
+  top: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pageLogin::before {
+  content: '';
+  position: absolute;
+  width: 431px;
+  height: 431px;
+  background-color: rgba(0, 59, 229, 0.6);;
+  border-radius: 50%;
+  top: -100px;
+  left: 1500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1; /* Opcional: para garantir que o eclipse esteja acima do gradiente de fundo */
+}
+
+/* Logo */
+.logo {
+  width: 187.19px;
+  height: 104.89px;
+  margin-bottom: 20px; 
+}
+
+/* Input de Nome */
+.loginInput {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #003BE5;
+  border-radius: 100px;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 165px;
+  margin-top: 80px;
+}
+
+/* Botão de Entrar */
+.loginButton {
+  width: 400px;
+  height: 40px;
+  background: #003BE5;
+  border-radius: 100px;
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  margin-left: 174px;
+}
+
+.loginButton:hover {
+  background: #002bb5;
+}

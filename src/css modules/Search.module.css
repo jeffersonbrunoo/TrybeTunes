@@ -1,0 +1,88 @@
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.contentContainer {
+  margin-left: 400px; /* Ajuste para garantir que o conteúdo fique ao lado do navigation */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0vh; /* Espaço para acomodar o gradientContainer */
+  z-index: 2;
+  background-color: #FFFFFF; /* Fundo branco a partir dos resultados de pesquisa */
+}
+
+.gradientContainer {
+  background: linear-gradient(to right, #003BE5 0%, #00D5E2 100%);
+  padding: 35px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+
+  /* Ocupando o topo da página sem sobrepor o conteúdo */
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 20vh; /* Ajuste para a altura desejada */
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.inputButtonContainer {
+  width: 523px;
+  height: 40px;
+  display: flex;
+  gap: 0px;
+  border-radius: 23px 0px 0px 0px;
+  align-items: center;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.button {
+  width: 114px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: rgba(0, 213, 226, 1);
+  color: #FFFFFF;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #FFFFFF;
+}
+
+.resultContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.albumContainer {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.albumImage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.albumDescription {
+  text-align: center;
+}
+
+.albumLink {
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgba(61, 73, 92, 1);
+}

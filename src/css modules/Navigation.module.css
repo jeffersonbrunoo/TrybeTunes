@@ -1,0 +1,48 @@
+.navigation {
+  background-color: rgba(255, 255, 255, 1);
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 100vh; /* Atualizado para ocupar a tela toda */
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  text-align: center;
+  width: 400px; /* Largura ajustada para permitir mais espaço para o conteúdo principal */
+  position: fixed; /* Atualizado para manter o navigation fixo no lado esquerdo */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garantir que o navigation não sobreponha os outros elementos */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 180px;
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(68, 73, 85, 1);
+  font-size: 20px;
+}
+
+.divImg {
+  padding-left: 90px;
+  display: flex;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.main-content {
+  margin-left: 250px; /* Ajuste para compensar a largura do navigation */
+  padding: 20px;
+}

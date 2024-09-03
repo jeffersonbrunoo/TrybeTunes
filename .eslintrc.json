@@ -1,3 +1,6 @@
 {
-  "extends": "trybe-frontend"
+  "extends": "trybe-frontend",
+  "rules": {
+    "max-len": "off"
+  }
 }

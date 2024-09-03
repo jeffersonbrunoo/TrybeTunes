@@ -1,0 +1,56 @@
+.albumPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.navigationContainer {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tracksContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column; /* Mantém as músicas em coluna */
+  z-index: 2;
+  position: relative;
+  padding-top: 25vh; /* Adiciona espaço suficiente para evitar sobreposição */
+  margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
+  padding-left: 72vh;
+}
+
+.musicList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradientContainer {
+  background: linear-gradient(to right, #003BE5 0%, #00D5E2 100%);
+  padding: 35px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+  margin-left: 400px;
+
+  /* Ocupando o topo da página sem sobrepor o conteúdo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 20vh; /* Ajuste para a altura desejada */
+  box-sizing: border-box;
+  z-index: 1;
+
+  /* Centralizando o conteúdo */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}

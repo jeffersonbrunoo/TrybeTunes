@@ -1,0 +1,40 @@
+/* NotFound.module.css */
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #003BE5 0%, #00D5E2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 800px; /* Adiciona espaço ao redor do conteúdo */
+}
+
+.title {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 80px; /* Reduzido para evitar sobreposição */
+    line-height: 1.2; /* Ajustado para melhor espaçamento */
+    letter-spacing: 2%;
+    color: #FFFFFF; /* Cor branca para melhor contraste */
+    margin: 0;
+    align-items: center;
+    padding-top: 350px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra para melhor legibilidade */
+}
+
+.subtitle {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 300;
+    font-size: 24px; /* Reduzido para melhor ajuste */
+    line-height: 1.5; /* Ajustado para melhor espaçamento */
+    letter-spacing: 2%;
+    color: #FFFFFF; /* Cor branca para melhor contraste */
+    margin: 10px 0 0 0; /* Adiciona margem superior */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra para melhor legibilidade */
+}
+
+.header {
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+}
